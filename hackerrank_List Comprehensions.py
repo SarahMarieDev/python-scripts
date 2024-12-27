@@ -1,3 +1,5 @@
+# My solution code to the Python List Comprehensions challenge on HackerRank
+
 def list_cmp(x_list, y_list, z_list, n):
     results = [[i, j, k] for i in x_list for j in y_list for k in z_list if (i + j +k) != n]
     print(results)
