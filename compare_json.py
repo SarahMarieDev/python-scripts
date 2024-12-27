@@ -8,8 +8,8 @@ def load_and_sort_json(file_path):
         data = json.load(file)
     return data
 
-source_data = load_and_sort_json('SourceTenant.txt')
-target_data = load_and_sort_json('TargetTenant.txt')
+source_data = load_and_sort_json('Compare1.txt')
+target_data = load_and_sort_json('Compare2.txt')
 
 diff = DeepDiff(source_data, target_data, ignore_order=True)
 

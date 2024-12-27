@@ -1,0 +1,139 @@
+{
+  "flowPart": {
+    "_type": "flowPartContainer",
+    "sequenceNumber": 0,
+    "runtimeProcessId": "a59d3288-917a-4569-9716-21fe33c0009a",
+    "flowPartContainerType": "START_END",
+    "flowParts": [
+      {
+        "_type": "flowPartContainer",
+        "sequenceNumber": 0,
+        "runtimeProcessId": "459e9938-52d2-4ded-b54e-bfb0e23e3024",
+        "flowPartContainerType": "SEQUENTIAL_FLOW",
+        "flowParts": [
+          {
+            "_type": "dataLakeActivity",
+            "sequenceNumber": 1,
+            "runtimeProcessId": "8c72be0b-c6fd-4509-8e9b-2e4496a8cbed",
+            "name": "IngestToDataLake1",
+            "description": "",
+            "activityType": "DATA_LAKE",
+            "activityDocuments": [],
+            "type": "WRITE",
+            "cronExpression": "",
+            "schedule": "",
+            "timeZone": "",
+            "queryModels": [],
+            "connectionPointNames": []
+          },
+          {
+            "_type": "applicationActivity",
+            "sequenceNumber": 0,
+            "runtimeProcessId": "15fcff4c-e178-4792-895a-f88939807bdc",
+            "name": "cpqeq_ims",
+            "description": "",
+            "activityType": "APPLICATION",
+            "activityDocuments": [
+              {
+                "noun": "CPQEQ_Customer",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_Country",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DealerTerritory",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_Product",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_Quote",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_StateProvince",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_Opportunity",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectQuoteLine",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectRepresentativeTerritory",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_Dealer",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectTerritory",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectRepresentative",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectQuote",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DirectCustomer",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DealerRepresentativeTerritory",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_DealerRepresentative",
+                "verb": "",
+                "documentType": "JSON"
+              },
+              {
+                "noun": "CPQEQ_QuoteLine",
+                "verb": "",
+                "documentType": "JSON"
+              }
+            ],
+            "applicationConnectionPoints": "cpqeq_ims"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "EQ_DL",
+  "description": "",
+  "type": "DATALAKE_FLOW",
+  "documentFlowStatus": "ACTIVE",
+  "lastUpdatedBy": "Lowell Braatz",
+  "lastUpdatedOn": "2023-10-26T15:35:23.897Z",
+  "lastActivatedOn": "2023-10-26T20:36:37.623Z",
+  "protectOnExport": false,
+  "runtimeProcessId": "f1d3f616-69e0-4937-855b-37d055fe7e75",
+  "protected": false
+}
