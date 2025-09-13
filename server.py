@@ -6,3 +6,21 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.bind(("0.0.0.0", 1337))
 # Start listening with a backlog size of 10
 sock.listen(10)
+
+conn = False
+
+while True:
+    if conn is False:
+        print('Waiting for connection')
+        conn, client = sock.accept()
+        print('Connection from', client)
+    else:
+        received = conn.recv(1024)
+        received_message = received.decode("utf-8")
+        print("[RECEIEVED]: " + received_message)
+        conn.send(str.encode("You said: " + received_message))
+        if received_message.lower() == "exit":
+            print("Exiting server loop.")
+            break
+
+sock.close()
